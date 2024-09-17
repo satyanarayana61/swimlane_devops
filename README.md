@@ -1,7 +1,7 @@
 Step1: Installed the mongo db using helm charts.
 
 **Installed MongoDB:**
-helm install my-mongodb bitnami/mongodb   --set auth.rootPassword=supersecretroot   --set auth.username=myuser   --set auth.password=mypassword   --set auth.database=mydatabase   --set auth.enabled=true   --set persistence.enabled=true   --set persistence.size=2Gi   --set persistence.storageClass=azurefile
+helm install my-mongodb bitnami/mongodb   --set auth.rootPassword=supersecretroot   --set auth.username=adminuser --set auth.password=adminpasswod    --set auth.database=database   --set auth.enabled=true   --set persistence.enabled=true   --set persistence.size=2Gi   --set persistence.storageClass=azurefile
 
 **#Wrtien the multi stage Docker file to create the image for app.**
 Step1 : To build the images to follow below commands.
